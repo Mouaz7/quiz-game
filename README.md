@@ -35,76 +35,65 @@ To run this project, you need:
    ```bash
    git clone <repository_url>
    cd <repository_folder>
+   ```
 
-2. Open the Project in Visual Studio:
-Launch Visual Studio 2022.
-Go to File > Open > Folder and select the project folder.
+2. **Open the Project in Visual Studio**:
+   - Launch Visual Studio 2022.
+   - Go to **File > Open > Folder** and select the project folder.
 
+3. **Build the Project**:
+   - Press `Ctrl + Shift + B` or navigate to **Build > Build Solution**.
 
-3. Build the Project:
-Press Ctrl + Shift + B or navigate to Build > Build Solution.
-Run the Application:
+4. **Run the Application**:
+   - Press `F5` to execute the program in Debug mode.
+   - Follow the on-screen instructions to interact with the quiz system.
 
-4. Press F5 to execute the program in Debug mode.
-Follow the on-screen instructions to interact with the quiz system.
+## Project Structure
 
-
-Project Structure
 The project is organized into the following components:
 
-main.cpp: Entry point for the application.
-Question.cpp & Question.h: Base class for all question types.
+```
+.
+├── src/
+│   ├── main.cpp                # Entry point for the application
+│   ├── Question.cpp            # Base class implementation
+│   ├── Question.h              # Base class header
+│   ├── YesNoQuestion.cpp       # Yes/No question implementation
+│   ├── YesNoQuestion.h         # Yes/No question header
+│   ├── DirectAnswerQuestion.cpp# Direct answer question implementation
+│   ├── DirectAnswerQuestion.h  # Direct answer question header
+│   ├── MultipleChoiceQuestion.cpp # Multiple choice question implementation
+│   ├── MultipleChoiceQuestion.h   # Multiple choice question header
+│   ├── Player.cpp              # Player class implementation
+│   ├── Player.h                # Player class header
+│   ├── Leaderboard.cpp         # Leaderboard implementation
+│   ├── Leaderboard.h           # Leaderboard header
+│   ├── Quiz.cpp                # Core quiz logic
+│   ├── Quiz.h                  # Quiz header
+│   ├── QuizHandler.cpp         # Quiz management implementation
+│   ├── QuizHandler.h           # Quiz management header
+└── UML Diagram/
+    └── class_diagram.jpg       # UML representation of the system
+```
 
-Specialized Question Classes:
-YesNoQuestion.cpp & YesNoQuestion.h
-DirectAnswerQuestion.cpp & DirectAnswerQuestion.h
-MultipleChoiceQuestion.cpp & MultipleChoiceQuestion.h
-Player.cpp & Player.h: Handles player data such as name and score.
-Leaderboard.cpp & Leaderboard.h: Manages the ranking of players.
-Quiz.cpp & QuizHandler.cpp: Core logic for quiz management.
+## UML Diagram
 
-
-UML Diagram
-A UML diagram is included to illustrate the relationships between classes and their interactions. You can find it in the UML Diagram folder or view it below:
+A UML diagram is included to illustrate the relationships between classes and their interactions. You can find it in the `UML Diagram` folder or view it below:
 
 (Attach or reference the UML diagram image here if available.)
 
-.
-├── src/
-│   ├── main.cpp
-│   ├── Question.cpp
-│   ├── Question.h
-│   ├── YesNoQuestion.cpp
-│   ├── YesNoQuestion.h
-│   ├── DirectAnswerQuestion.cpp
-│   ├── DirectAnswerQuestion.h
-│   ├── MultipleChoiceQuestion.cpp
-│   ├── MultipleChoiceQuestion.h
-│   ├── Player.cpp
-│   ├── Player.h
-│   ├── Leaderboard.cpp
-│   ├── Leaderboard.h
-│   ├── Quiz.cpp
-│   ├── Quiz.h
-│   ├── QuizHandler.cpp
-│   └── QuizHandler.h
-└── UML Diagram/
-    └── class_diagram.jpg
+## Contribution Guidelines
 
-
-
-Contribution Guidelines
 We welcome contributions to this project. To contribute:
 
-1. Fork the repository.
-2. Create a feature branch
+1. **Fork the repository**.
+2. **Create a feature branch**:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Commit your changes and push to your fork**.
+4. **Open a pull request** and describe your changes.
 
-git checkout -b feature/your-feature-name
+## License
 
-3. Commit your changes and push to your fork.
-4. Open a pull request and describe your changes.
-
-
-License
-This project is licensed under the MIT License. You are free to use, modify, and distribute the code as long as you retain the original license.
-
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute the code as long as you retain the original license.
